@@ -1,0 +1,6 @@
+.wedo {
+  padding: 10rem 0;
+  &-container {
+    @include flexBox(stretch, space-between);
+  }
+}

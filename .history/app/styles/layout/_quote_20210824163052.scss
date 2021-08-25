@@ -1,0 +1,23 @@
+.quote {
+  padding: 6.5rem 0;
+  @include bg($gray-color);
+  &-container {
+    @include flexBox(center, space-between);
+  }
+  //   &-arrow {
+  //     color: $gray-dark-color;
+  //     cursor: pointer;
+  //     font-size: 2rem;
+  //     padding: 1rem 2rem;
+  //   }
+  //   &-content {
+  //     padding: 0 5.5rem;
+  //     @include flexBox(center);
+  //   }
+  //   &-icon {
+  //     @include size(15rem);
+  //     @include flexBox(center, center);
+  //     border: 3px solid $third-color;
+  //     flex-shrink: 0;
+  //   }
+}

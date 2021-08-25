@@ -1,0 +1,5 @@
+.header {
+  min-height: 100rem;
+  background: linear-gradient(to bottom, $primary-color, $secondary-color),
+    url("../images/img-header-bg.jpg") no-repeat center / cover;
+}

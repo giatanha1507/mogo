@@ -1,0 +1,10 @@
+.about {
+  padding-top: 9.3rem;
+  padding-bottom: 11rem;
+  background-color: white;
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -3rem;
+  }
+}

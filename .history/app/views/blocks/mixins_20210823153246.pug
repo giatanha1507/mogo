@@ -1,0 +1,14 @@
+mixin menuLink(title, href= "#")
+	li.header-menu-item
+		a.header-menu-link(href= href)= title
+
+mixin headerItem(number, title)
+	.header-bottom-item
+		span.header-bottom-number= number
+		span.header-bottom-text= title
+
+mixin blockHeader(caption, title, desc)
+	h3.block-header-caption= caption
+	h2.block-header-title= title
+	if desc
+		p.block-header-desc= desc

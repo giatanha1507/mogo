@@ -1,0 +1,57 @@
+mixin menuLink(title, href= "#")
+	li.header-menu-item
+		a.header-menu-link(href= href)= title
+
+mixin headerItem(number, title, active)
+	if (active == true)
+		.header-bottom-item.active
+			span.header-bottom-number= number
+			span.header-bottom-text= title
+	else
+		.header-bottom-item
+			span.header-bottom-number= number
+			span.header-bottom-text= title
+
+mixin blockBox(caption, title, desc)
+	.block-box
+		h3.block-box-caption= caption
+		h2.block-box-title= title
+		if desc
+			p.block-box-desc= desc
+
+mixin aboutItem(src, title, iconClass, alt = "")
+	.about-item
+		img.about-image(src= src, alt= alt)
+		.about-content
+			i.about-icon(class= iconClass)
+			span.about-title= title
+
+mixin numberItem(count, title)
+	.number-item
+		h4.number-item-count= count
+		span.number-item-text= title
+
+mixin serviceItem(src, title, desc)
+	.service-item
+		img.service-item-icon(src= src)
+		.service-item-info
+			h3.service-item-title= title
+			p.service-item-desc= desc
+
+mixin wedoItem(src, title, iconClass, content, active)
+	if (active == true)
+		.wedo-item.active
+			.wedo-item-header
+				img(src= src).wedo-item-icon
+				h3.wedo-item-title= title
+				i.wedo-item-arrow(class= iconClass)
+			.wedo-item-content
+				.wedo-item-text= content
+	else
+		.wedo-item
+				.wedo-item-header
+					img(src= src).wedo-item-icon
+					h3.wedo-item-title= title
+					i.wedo-item-arrow(class= iconClass)
+				.wedo-item-content
+					.wedo-item-text= content

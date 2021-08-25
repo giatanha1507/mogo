@@ -1,0 +1,14 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+.text {
+  font-family: $third-font;
+  font-size: 1.5rem;
+  // font-weight: 300;
+  font-style: italic;
+}
+.text--light {
+  font-weight: 300;
+}

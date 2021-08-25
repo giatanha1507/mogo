@@ -1,0 +1,27 @@
+.header {
+  min-height: 100rem;
+  background: linear-gradient(
+      to bottom,
+      rgba($primary-color, 0.8),
+      rgba($secondary-color, 0.8)
+    ),
+    url("../images/img-header-bg.jpg") no-repeat center / cover;
+  color: white;
+  &-logo {
+    font-size: 3rem;
+    font-family: Montserrat, "Helvetica Neue", Helvetica;
+    font-weight: bold;
+    color: white;
+  }
+  &-menu-link {
+    color: white;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    display: inline-block;
+    padding-bottom: 1rem;
+    border-bottom: 4px solid transparent;
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}

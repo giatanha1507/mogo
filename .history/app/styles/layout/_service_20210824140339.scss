@@ -1,0 +1,7 @@
+.service {
+  padding-top: 100rem;
+  @include bg(white);
+  &-list {
+    @include flexBox;
+  }
+}

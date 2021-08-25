@@ -1,0 +1,62 @@
+.footer {
+  &-top {
+    padding: 7.5rem 0 7rem;
+  }
+  &-heading {
+    text-transform: uppercase;
+    font-weight: 500;
+    height: 4rem;
+    &--logo {
+      text-transform: none;
+      font-size: 4.6rem;
+      font-weight: bold;
+      color: $text-color;
+    }
+  }
+  &-desc {
+    font-style: normal;
+    margin-bottom: 4.5rem;
+    margin-top: 2rem;
+  }
+  &-follow {
+    strong {
+      font-weight: bold;
+      font-size: 1.8rem;
+    }
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  &-social {
+    @include flexBox(center);
+    margin-bottom: 3.5rem;
+    &-list {
+    }
+    &-icon {
+      margin-left: 1.5rem;
+      color: $third-color;
+      font-size: 2rem;
+    }
+  }
+  &-form {
+    width: 100%;
+    max-width: 38rem;
+    @include flexBox();
+    &-input {
+      padding: 1.5rem;
+      @include bg(white);
+      border: 1px solid #e5e5e5;
+      border-right: 0;
+      font-family: $third-font;
+      font-size: 1.5rem;
+      font-style: italic;
+    }
+    &-button {
+      color: white;
+      text-transform: uppercase;
+      padding: 1.5rem;
+      border: 0;
+      @include bg($third-color);
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.quote {
+  padding: 6.5rem 0;
+  @include bg($gray-color);
+  &-container {
+    @include flexBox(center, space-between);
+  }
+  &-arrow {
+    color: $gray-dark-color;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+  }
+  &-content {
+    padding: 0 5.5rem;
+    @include flexBox(center);
+  }
+  &-icon {
+    @include size(15rem);
+    @include flexBox(center, center);
+    border: 3px solid $third-color;
+    flex-shrink: 0;
+  }
+  &-info {
+    padding-left: 6rem;
+    &-desc {
+      font-size: 2.5rem;
+      font-weight: 300;
+      line-height: 1.6;
+      font-family: $third-font;
+      margin-bottom: 2.5rem;
+      font-style: italic;
+      color: $text-color;
+      @include textClamp(3);
+    }
+    &-author {
+      font-family: $secondary-font;
+      font-size: 2.4rem;
+    }
+  }
+}

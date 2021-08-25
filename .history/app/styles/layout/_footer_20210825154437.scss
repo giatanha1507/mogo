@@ -1,0 +1,143 @@
+.footer {
+  &-top {
+    padding: 7.5rem 0 7rem;
+    @include flexBox(stretch, space-between);
+  }
+  &-column {
+    width: calc(35% - 25px);
+    &:first-child {
+      width: calc(40% - 25px);
+    }
+    &:last-child {
+      width: calc(25% - 25px);
+    }
+  }
+  &-heading {
+    text-transform: uppercase;
+    font-weight: 500;
+    height: 4rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+    &--logo {
+      text-transform: none;
+      font-size: 4.6rem;
+      font-weight: 600;
+      color: $gray-dark-color;
+    }
+  }
+  &-desc {
+    font-style: normal;
+    margin-bottom: 4.5rem;
+    margin-top: 2rem;
+  }
+  &-follow {
+    strong {
+      font-weight: bold;
+      font-size: 1.8rem;
+    }
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  &-social {
+    @include flexBox(center);
+    margin-bottom: 3.5rem;
+
+    &-icon {
+      margin-left: 1.5rem;
+      color: $third-color;
+      font-size: 2rem;
+    }
+  }
+  &-form {
+    width: 100%;
+    max-width: 38rem;
+    @include flexBox();
+    &-input {
+      padding: 1.5rem;
+      @include bg(white);
+      border: 1px solid #e5e5e5;
+      border-right: 0;
+      font-family: $third-font;
+      font-size: 1.5rem;
+      font-style: italic;
+      width: 100%;
+    }
+    &-button {
+      color: white;
+      text-transform: uppercase;
+      padding: 1.5rem 3.5rem;
+      border: 0;
+      font-weight: bold;
+      @include bg($third-color);
+      flex-shrink: 0;
+    }
+  }
+  &-blog {
+    @include flexBox(center);
+    margin-bottom: 3rem;
+    &-image {
+      @include size(12rem, 8rem);
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    &-info {
+      padding-left: 2rem;
+    }
+    &-title {
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      line-height: 1.4;
+      font-weight: 500;
+      color: $title-color;
+      @include textClamp(2);
+    }
+  }
+  &-images {
+    @include flexBox(stretch, flex-start, row, wrap);
+    margin-left: -2px;
+    margin-bottom: 2rem;
+  }
+  &-image {
+    margin-left: 2px;
+    width: calc(33.33% - 2px);
+    margin-bottom: 2px;
+    padding-bottom: 33.33%;
+    height: 0;
+    position: relative;
+    img {
+      @include size(100%);
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    &-more {
+      color: black;
+    }
+  }
+  &-bottom {
+    padding: 2.5rem;
+    text-align: center;
+    font-weight: 600;
+    border-top: 1px solid #e5e5e5;
+    span {
+      color: $primary-color;
+    }
+  }
+  @include maxWidth(1023px) {
+    &-top {
+      display: block;
+      padding-bottom: 3rem;
+      padding-top: 4rem;
+    }
+    &-column:not(:nth-child(99)) {
+      width: 100%;
+      margin-bottom: 3rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

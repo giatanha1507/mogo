@@ -1,0 +1,107 @@
+mixin menuLink(title, href= "#")
+	li.header-menu-item
+		a.header-menu-link(href= href)= title
+
+mixin headerItem(number, title, active)
+	if (active == true)
+		.header-bottom-item.active
+			span.header-bottom-number= number
+			span.header-bottom-text= title
+	else
+		.header-bottom-item
+			span.header-bottom-number= number
+			span.header-bottom-text= title
+
+mixin blockBox(caption, title, desc)
+	.block-box
+		h3.block-box-caption= caption
+		h2.block-box-title= title
+		if desc
+			p.block-box-desc= desc
+
+mixin aboutItem(src, title, iconClass, alt = "")
+	.about-item
+		img.about-image(src= src, alt= alt)
+		.about-content
+			i.about-icon(class= iconClass)
+			span.about-title= title
+
+mixin numberItem(count, title)
+	.number-item
+		h4.number-item-count= count
+		span.number-item-text= title
+
+mixin serviceItem(src, title, desc)
+	.service-item
+		img.service-item-icon(src= src)
+		.service-item-info
+			h3.service-item-title= title
+			p.service-item-desc= desc
+
+mixin wedoItem(src, title, iconClass, content, active = "")
+	.wedo-item(class= active)
+		.wedo-item-header
+			img(src= src).wedo-item-icon
+			h3.wedo-item-title= title
+			i.wedo-item-arrow(class= iconClass)
+		.wedo-item-content
+			.wedo-item-text= content
+
+mixin teamSocial(facebook= "#", instagram= "#", linked= "#", twitter= "#")
+	ul.team-social
+		li.team-social-item
+			a.team-social-link(href= facebook)
+				i.fab.fa-facebook-f
+		li.team-social-item
+			a.team-social-link(href= instagram)
+				i.fab.fa-instagram
+		li.team-social-item
+			a.team-social-link(href= linked)
+				i.fab.fa-linkedin-in
+		li.team-social-item
+			a.team-social-link(href= twitter)
+				i.fab.fa-twitter
+
+mixin teamIteam(src, name, position)
+	.team-item
+		.team-item-main
+			img(src= src).team-item-image
+			.team-item-content
+				if block
+					block
+		.team-item-info
+			h3.team-item-name= name
+			span.team-item-position= position
+
+mixin workItem(src, icon, title, item = "", desc = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, quam? Quis mollitia expedita nisi veniam accusamus alias est dolores, magni libero doloribus repellendus voluptatum tempore nulla ab aliquam eaque harum!")
+	.work-item(class= item)
+		img.work-image(src= src)
+		.work-content
+			i.work-icon(class= icon)
+			h3.work-title= title
+			span.work-desc.text.text--light= desc
+
+mixin peopleItem(src, name, position, desc = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam eligendi praesentium ea maxime eius, modi commodi magni exercitationem fugit impedit a beatae est unde hic repellat perferendis quos eaque cum?")
+	li.people-item
+		img.people-avatar(src= src)
+		.people-info
+			h3.people-info-name= name
+			span.people-info-position.text.text--light= position
+			p.people-info-desc.text= desc
+
+mixin storyItem(src, datenum, datetext, title, desc, eye, comment)
+	li.story-item
+		.story-media
+			img.story-image(src= src)
+			.story-date
+				span.story-date-number= datenum
+				span.story-date-text.text.text--light= datetext
+		h3.story-title= title
+		p.story-desc.text= desc
+		.story-meta
+			.story-meta-item
+				i.fa.fa-eye.story-meta-icon
+				span.story-meta-number= eye
+			.story-meta-item
+				i.fa.fa-comment.story-meta-icon
+				span.story-meta-number= comment

@@ -1,0 +1,22 @@
+.work {
+  padding-top: 10rem;
+  &-list {
+    @include flexBox;
+  }
+  &-column {
+    width: 25%;
+  }
+  &-content {
+    color: white;
+    text-align: center;
+  }
+  &-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+  &-title {
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+}
+@include hoverEffect(".work-item", ".work-content", "false");

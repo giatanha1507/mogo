@@ -1,0 +1,33 @@
+.work {
+  padding-top: 10rem;
+  &-list {
+    @include flexBox;
+    height: 78rem;
+  }
+  &-column {
+    width: 25%;
+  }
+  &-content {
+    color: white;
+    text-align: center;
+  }
+  &-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+  &-title {
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+  &-image {
+    @include size(100%);
+    object-fit: cover;
+  }
+  &-item {
+    height: 50%;
+    &-full {
+      height: 100%;
+    }
+  }
+}
+@include hoverEffect(".work-item", ".work-content", "false");

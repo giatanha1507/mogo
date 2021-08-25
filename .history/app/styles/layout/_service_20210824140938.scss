@@ -1,0 +1,19 @@
+.service {
+  padding-top: 10rem;
+  @include bg(white);
+  &-list {
+    @include flexBox;
+    margin-left: -4rem;
+    margin-top: 6.5rem;
+  }
+  &-item {
+    width: calc(33.33% - 4rem);
+    margin-left: 4rem;
+    @include flexBox(flex-start);
+    &-icon {
+      font-size: 3.4rem;
+      color: $third-color;
+      margin: 0 3rem;
+    }
+  }
+}

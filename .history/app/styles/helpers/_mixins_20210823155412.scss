@@ -1,0 +1,8 @@
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin bg($color: red) {
+  background-color: $color;
+}

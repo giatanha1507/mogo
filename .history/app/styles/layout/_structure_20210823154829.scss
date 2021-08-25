@@ -1,0 +1,23 @@
+.container-fluid {
+  max-width: $container-fluid;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: $container + 30px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.block-header {
+  &-caption {
+    font-family: $secondary-font;
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+  }
+  &-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}

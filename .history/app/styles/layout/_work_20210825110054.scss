@@ -1,0 +1,10 @@
+.work {
+  padding-top: 10rem;
+  &-list {
+    @include flexBox;
+  }
+  &-column {
+    width: 25%;
+  }
+}
+@include hoverEffect(".work-item", ".work-content", "false");

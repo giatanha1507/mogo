@@ -1,0 +1,21 @@
+.about {
+  padding-top: 9.3rem;
+  padding-bottom: 11rem;
+  background-color: white;
+  /*Flex*/
+  //   &-list {
+  //     display: flex;
+  //     flex-wrap: wrap;
+  //     margin-left: -3rem;
+  //   }
+  //   &-item {
+  //     margin-left: 3rem;
+  //     width: calc(33.33% - 3rem);
+  //   }
+  /*Grid*/
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 3rem;
+  }
+}

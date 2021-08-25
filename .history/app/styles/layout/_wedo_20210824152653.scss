@@ -1,0 +1,13 @@
+.wedo {
+  padding: 10rem 0;
+  &-container {
+    @include flexBox(stretch, space-between);
+    & > * {
+      width: calc(50% - 1.5rem);
+    }
+  }
+  //   &-content,
+  //   &-image {
+  //     width: calc(50% - 1.5rem);
+  //   }
+}

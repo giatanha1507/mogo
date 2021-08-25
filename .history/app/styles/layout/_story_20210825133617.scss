@@ -1,0 +1,23 @@
+.story {
+  padding: 10rem 0;
+  background-color: white;
+  &-list {
+    @include flexBox(stretch, space-between);
+  }
+  &-item {
+    width: calc(33.33% - 2rem);
+  }
+  &-image {
+    @include size(100%, 24rem);
+    object-fit: cover;
+  }
+  &-date {
+    @include bg($third-color);
+    padding: 1.5rem 2rem;
+    @include flexBox(center, center, column);
+    color: white;
+    &-number {
+      font-weight: bold;
+    }
+  }
+}

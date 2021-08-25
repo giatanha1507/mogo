@@ -1,0 +1,69 @@
+.wedo {
+  padding: 10rem 0;
+  &-container {
+    @include flexBox(stretch, space-between);
+    // & > * {
+    //   width: calc(50% - 1.5rem);
+    // }
+  }
+  &-content,
+  &-image {
+    width: calc(50% - 1.5rem);
+  }
+  &-image {
+    object-fit: cover;
+  }
+  &-item {
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+    &-header {
+      @include flexBox(center);
+      padding: 1.5rem;
+      border: 1px solid $gray-dark-color;
+      cursor: pointer;
+    }
+    &-icon {
+      margin-right: 1.5rem;
+    }
+    &-title {
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+    &-arrow {
+      margin-left: auto;
+      color: $gray-dark-color;
+      font-size: 3rem;
+    }
+    &-content {
+      padding: 2rem;
+      border: 1px solid $gray-dark-color;
+      border-top: 0;
+      font-size: 1.5rem;
+      font-family: $third-font;
+      font-style: italic;
+      line-height: 1.6;
+      color: $text-color;
+      display: none;
+      font-weight: 300;
+    }
+    &-text {
+      height: 13rem;
+      overflow-y: auto;
+      padding-right: 2rem;
+      &::-webkit-scrollbar {
+        width: 0.6rem;
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: $gray-light-color;
+        border-radius: 2rem;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: $third-color;
+        border-radius: 2rem;
+      }
+    }
+  }
+}

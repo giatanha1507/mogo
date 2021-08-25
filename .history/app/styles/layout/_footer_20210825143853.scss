@@ -1,0 +1,19 @@
+.footer {
+  &-top {
+    padding: 7.5rem 0 7rem;
+  }
+  &-heading {
+    text-transform: uppercase;
+    font-weight: 500;
+    height: 4rem;
+    &--logo {
+      text-transform: none;
+      font-size: 4.6rem;
+      font-weight: bold;
+      color: $text-color;
+    }
+  }
+  &-desc {
+    font-style: normal;
+  }
+}

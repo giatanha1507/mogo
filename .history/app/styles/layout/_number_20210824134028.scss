@@ -1,0 +1,15 @@
+.number {
+  @include bg($third-color);
+  &-item {
+    padding: 8.5rem 3.5rem;
+    color: white;
+    border-left: 1px solid white;
+    text-align: center;
+    text-transform: uppercase;
+    &-count {
+      font-size: 7.2rem;
+      font-weight: bold;
+      margin-bottom: 3rem;
+    }
+  }
+}

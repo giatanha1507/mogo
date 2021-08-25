@@ -1,0 +1,6 @@
+.number{
+    @include bg($third-color)
+    &-item{
+        padding: 8.5rem 3.5rem;
+    }
+}

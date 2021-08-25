@@ -2,6 +2,9 @@
 
 # dependencies
 /node_modules
+/app
+/.vscode
+/.history
 /.pnp
 .pnp.js
 
